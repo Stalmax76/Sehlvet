@@ -78,5 +78,8 @@
   },
   "optionalDependencies": {
     "@img/sharp-win32-x64": "latest"
+  },
+  "dependencies": {
+    "button": "^1.1.1"
   }
 }

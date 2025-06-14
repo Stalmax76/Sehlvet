@@ -1,3 +1,7 @@
 :root {
-	--primary: #000;
+	--main-color: #2f2f2f;
+	--mainFont: "Playfair Display", serif;
+	--titleFont: "Wilkysta", sans-serif;
+	--bg-color: #f0eadc;
+	--bg-color-2: #754f23;
 }

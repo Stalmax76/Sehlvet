@@ -1,5 +1,44 @@
 .header {
-	// .header__container
+	@include adaptiveValue("padding-block", 58, 20);
+
 	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		@include adaptiveValue("font-size", 36, 28);
+		font-weight: 600;
+		line-height: normal;
+		color: var(--main-color);
+	}
+
+	&__actions {
+	}
+}
+.actions {
+	display: flex;
+	column-gap: 30px;
+	align-items: center;
+	&__item {
+		aspect-ratio: 1 / 1;
+		max-height: 30px;
+		transition:
+			scale 0.4s,
+			color 0.4s;
+		@media (any-hover: hover) {
+			&:hover {
+				// opacity: 0.8;
+				scale: 1.02;
+				color: var(--bg-color-2);
+			}
+		}
+	}
+
+	&__item--icon-bookmark {
+	}
+
+	&__item--icon-bag {
 	}
 }

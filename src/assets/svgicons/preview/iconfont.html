@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>iconfont</title>
+	<style>
+		html,body{
+			height: 100%;
+		}
+		body{
+			padding: 1.875rem;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 1em;
+			background-color:#333;
+			color:#fff;
+		}
+		.iconfont-page h1{
+			font-size: 1.875rem;
+			margin-bottom: 2rem;
+		}
+		.iconfont-page ul{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2.5rem;
+			margin: 0;
+			padding: 0;
+		}
+		.iconfont-page ul li{
+			margin-bottom: 0.625rem;
+			display: inline-flex;
+			gap: 0.625rem;
+			list-style: none;
+			align-items: center;
+		}
+		.iconfont-page ul li::before{
+			font-size: 2rem;
+		}
+		@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("E://MyProjects/Sehlvet/Sehlvet/Sehlvet/src/assets/svgicons/preview/iconfont.woff2?6b66a52087b049a61b36b67eb9814191") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-strok"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-s-twiter"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-s-linkdin"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-s-instagram"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-s-instagram-1"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-s-facebook"]::before { 
+		content: "\f106"; 
+	} 
+	[class*="--icon-quotation"]::before { 
+		content: "\f107"; 
+	} 
+	[class*="--icon-mark-cart"]::before { 
+		content: "\f108"; 
+	} 
+	[class*="--icon-bookmark"]::before { 
+		content: "\f109"; 
+	} 
+	[class*="--icon-bag"]::before { 
+		content: "\f10a"; 
+	} 
+	[class*="--icon-bag-card"]::before { 
+		content: "\f10b"; 
+	} 
+
+	</style>
+</head>
+<body>
+	<div class="iconfont-page">
+		<h1>Перелік іконок та їх класів:</h1>
+		<ul>
+				<li class="--icon-strok">--icon-strok</li>
+				<li class="--icon-s-twiter">--icon-s-twiter</li>
+				<li class="--icon-s-linkdin">--icon-s-linkdin</li>
+				<li class="--icon-s-instagram">--icon-s-instagram</li>
+				<li class="--icon-s-instagram-1">--icon-s-instagram-1</li>
+				<li class="--icon-s-facebook">--icon-s-facebook</li>
+				<li class="--icon-quotation">--icon-quotation</li>
+				<li class="--icon-mark-cart">--icon-mark-cart</li>
+				<li class="--icon-bookmark">--icon-bookmark</li>
+				<li class="--icon-bag">--icon-bag</li>
+				<li class="--icon-bag-card">--icon-bag-card</li>
+		</ul>
+	</div>
+</body>
+</html>
