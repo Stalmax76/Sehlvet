@@ -1,7 +1,7 @@
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("E://MyProjects/Sehlvet/Sehlvet/Sehlvet/src/assets/svgicons/preview/iconfont.woff2?58cbc79d8d9e5989b4951d486593a88a") format("woff2"); 
+	src: url("E://MyProjects/Sehlvet/Sehlvet/Sehlvet/src/assets/svgicons/preview/iconfont.woff2?b8e481c4cc1430edbe7449f21b5a9a19") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -38,4 +38,7 @@
 	} 
 	[class*="--icon-bag-card"]::before { 
 		content: "\f10b"; 
+	} 
+	[class*="--icon-arrow-exp"]::before { 
+		content: "\f10c"; 
 	} 

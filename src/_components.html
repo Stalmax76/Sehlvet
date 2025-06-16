@@ -11,19 +11,32 @@
 	}'>
 	</include>
 	<style>
-		.components{
+		.components {
 			padding: 50px;
 			display: flex;
 			flex-direction: column;
 			gap: 30px;
 		}
+
+		.buttons {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 20px;
+		}
 	</style>
+
 	<body>
 		<div class="components">
-			<div class="components__item">
-
+			<h2>Buttons:</h2>
+			<div class="buttons">
+				<a data-fls-button href="#" class="btn btn--icon-arrow-exp">Explore </a>
+				<a data-fls-button href="#" class="btn btn--brown btn--icon-arrow-exp">Explore </a>
+				<a data-fls-button href="#" class="btn btn--arrow-left btn--icon-strok"></a>
+				<a data-fls-button href="#" class="btn btn--arrow-right btn--icon-strok"></a>
 			</div>
 		</div>
 	</body>
 	<script type="module" src="@js/app.js"></script>
+
 </html>

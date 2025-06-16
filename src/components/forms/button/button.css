@@ -1,0 +1,72 @@
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 36px 16px;
+  line-height: normal;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  border-radius: 16px;
+  border: 2px solid var(--bg-color-2);
+  color: inherit;
+  font-size: 24px;
+  color: var(--bg-color-2);
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn::before {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+.btn--arrow-left, .btn--arrow-right {
+  padding: 24px 27px;
+  max-width: 60px;
+  max-height: 60px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+}
+.btn--arrow-left::before, .btn--arrow-right::before {
+  font-size: 14px;
+  line-height: 1;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+@media (any-hover: hover) {
+  .btn--arrow-left:hover, .btn--arrow-right:hover {
+    background-color: var(--bg-color-2);
+    color: var(--white-color);
+  }
+}
+.btn--arrow-right {
+  rotate: 180deg;
+}
+@media (any-hover: hover) {
+  .btn:hover {
+    background-color: var(--bg-color-2);
+    color: var(--white-color);
+  }
+}
+.btn--brown {
+  background-color: var(--bg-color-2);
+  color: var(--white-color);
+}
+@media (any-hover: hover) {
+  .btn--brown:hover {
+    background-color: var(--bg-color);
+    color: var(--bg-color-2);
+  }
+}
+.btn--fw {
+  width: 100%;
+}
