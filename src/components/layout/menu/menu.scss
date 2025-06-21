@@ -11,17 +11,23 @@
 			left: 100%;
 			top: 0;
 			overflow: auto;
-			padding: 50px 15px 30px 15px;
+			padding: 35px 15px 30px 15px;
 			transition: left 0.3s;
+			background-color: var(--bg-color);
+			opacity: 0.95;
+
 			&::before {
 				content: "";
 				position: fixed;
 				width: 100%;
-				height: 70px;
+				height: 60px;
 				left: 100%;
 				top: 0;
 				transition: left 0.3s;
 				z-index: 2;
+				background-color: var(--bg-color);
+				opacity: 0.95;
+				filter: blur(10px);
 			}
 			[data-fls-menu-open] & {
 				left: 0;
@@ -40,10 +46,11 @@
 		column-gap: 30px;
 		row-gap: 15px;
 		flex-wrap: wrap;
+
 		@media (max-width: toEm($mobile)) {
 			flex-direction: column;
 			align-items: flex-end;
-			padding-block-start: 60px;
+			padding-block-start: 40px;
 			padding-inline-end: 20px;
 			row-gap: 25px;
 		}

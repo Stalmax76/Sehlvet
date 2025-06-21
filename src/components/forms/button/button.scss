@@ -1,7 +1,7 @@
 //<BUTTONS (a.btn+tab)>
 // Сніппет (HTML): btn
 .btn {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row-reverse;
 	align-items: center;
 	// align-self: center;
@@ -13,11 +13,21 @@
 	color: inherit;
 	font-size: 24px;
 	color: var(--bg-color-2);
+
 	transition:
 		background-color 0.3s ease,
 		color 0.3s ease;
 	&::before {
 		align-self: baseline;
+	}
+	@media (max-width: toEm($mobile)) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-inline: 25px;
+	}
+	@media (max-width: toEm($mobileSmall)) {
+		margin: 0;
 	}
 
 	&--arrow-left,
