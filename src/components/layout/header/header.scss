@@ -6,6 +6,16 @@
 	pointer-events: none;
 	background-color: inherit;
 	z-index: 50;
+	opacity: 1;
+	transition:
+		background-color 0.5s ease 0s,
+		backdrop-filter 0.5s ease 0s,
+		opacity 0.5s ease 0s;
+	&.scrolled {
+		background-color: var(--muted-color);
+		backdrop-filter: blur(15px);
+		opacity: 0.8;
+	}
 
 	// @media (min-width: toEm($mobile)) {
 	// 	top: 25px;
@@ -24,12 +34,6 @@
 		position: relative;
 		z-index: 5;
 		transition: background-color 0.5s ease 0s;
-		&.scrolled {
-			background-color: var(--muted-color);
-			backdrop-filter: blur(25px);
-			border-radius: 15px;
-			opacity: 0.8;
-		}
 	}
 
 	&__logo {

@@ -1,0 +1,132 @@
+.cardtrending__items {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardtrending {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    border-radius: 16px;
+    border: 1px solid var(--bg-color-2);
+    background: var(--bg-color);
+    padding: 24px;
+    width: 444px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+    &--small {
+        width: 340px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        line-height: normal;
+        color: var(--main-color);
+    }
+
+    &__image {
+        position: relative;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 400 /525;
+        margin-block-end: 30px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        flex: 1 1 auto;
+        margin-block-end: 39px;
+    }
+
+    &__footer {
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0px 2px 8px var(--main-color);
+        }
+    }
+}
+.footer-cardtrending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__info {
+    }
+
+    &__action {
+    }
+}
+
+.info-cardtrending {
+    &__price {
+        font-size: 16px;
+
+        span {
+            &:not(:last-child) {
+                margin-inline-end: 20px;
+            }
+        }
+    }
+    .actual-price {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .previuse-price {
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration-line: line-through;
+    }
+}
+
+.action-cardtrending {
+    display: inline-flex;
+    column-gap: 36px;
+    align-items: center;
+    margin-inline-end: -6px;
+    &__item {
+        transition:
+            transform 0.3s ease,
+            text-shadow 0.3s ease;
+        color: var(--main-color);
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.05);
+                text-shadow: 1px 2px 24px var(--main-color);
+            }
+        }
+    }
+
+    &__item--icon-mark-cart {
+        font-size: 18px;
+        &--active {
+            background-color: var(--bg-color-2);
+            max-height: 17px;
+        }
+    }
+
+    &__item--icon-bag-card {
+        font-size: 22px;
+    }
+}

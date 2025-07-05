@@ -7,13 +7,15 @@
 		@media (max-width: toEm($mobile)) {
 			position: fixed;
 			width: 100%;
-			height: 100%;
+			height: 100dvb;
 			left: 100%;
 			top: 0;
+
 			overflow: auto;
 			padding: 35px 15px 30px 15px;
 			transition: left 0.3s;
 			background-color: var(--bg-color);
+			// background-color: green;
 			opacity: 0.95;
 
 			&::before {
@@ -27,7 +29,7 @@
 				z-index: 2;
 				background-color: var(--bg-color);
 				opacity: 0.95;
-				filter: blur(10px);
+				filter: blur(15px);
 			}
 			[data-fls-menu-open] & {
 				left: 0;
@@ -46,6 +48,7 @@
 		column-gap: 30px;
 		row-gap: 15px;
 		flex-wrap: wrap;
+		background-color: inherit;
 
 		@media (max-width: toEm($mobile)) {
 			flex-direction: column;
