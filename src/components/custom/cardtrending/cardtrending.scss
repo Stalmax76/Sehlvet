@@ -1,9 +1,3 @@
-.cardtrending__items {
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .cardtrending {
     text-decoration: none;
     color: inherit;
@@ -12,12 +6,31 @@
     border: 1px solid var(--bg-color-2);
     background: var(--bg-color);
     padding: 24px;
-    width: 444px;
+    max-width: 444px;
+    flex-basis: 340px;
+    flex-grow: 1;
+    min-width: 300px;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
 
     &--small {
-        width: 340px;
+        max-width: 340px;
+        flex-basis: 100%;
+        min-width: 300px;
+    }
+    // @media (max-width: toEm($tablet)) {
+    //     &--small {
+    //         max-width: 444px;
+    //     }
+    // }
+    @media (max-width: toEm($tablet)) {
+        &--small {
+            max-width: 444px;
+            flex-basis: 340px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 300px;
+        }
     }
 
     &__body {

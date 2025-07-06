@@ -6,7 +6,7 @@
 
    &__title {
       font-family: var(--titleFont);
-      font-size: 64px;
+      @include adaptiveValue("font-size", 64, 32);
       line-height: normal;
       margin-bottom: 20px;
       padding-bottom: 5px;
@@ -14,9 +14,10 @@
 
    &__title-text {
       border-bottom: 2px solid var(--main-color);
+      display: inline-block;
       span {
          margin-left: 18px;
-         font-size: 36px;
+         @include adaptiveValue("font-size", 36, 24);
       }
    }
 
@@ -32,6 +33,18 @@
       }
       .sectionheader__subtitle {
          text-align: right;
+      }
+   }
+   @media (max-width: toEm($mobile)) {
+      display: block;
+
+      &__container {
+      }
+      &__title {
+         text-align: center;
+      }
+      &__subtitle {
+         text-align: center;
       }
    }
 }
