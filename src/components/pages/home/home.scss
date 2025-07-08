@@ -2,11 +2,14 @@
 }
 .page--home {
 }
+
 .home {
     &__hero {
         // background-color: #7b0606;
     }
     &__trending {
+    }
+    &__summer {
     }
 }
 .hero {
@@ -87,7 +90,7 @@
 
 .trending {
     margin-top: -220px;
-    @include adaptiveValue("margin-bottom", 94, 30);
+    @include adaptiveValue("margin-bottom", 54, 30);
 
     &__container {
     }
@@ -175,5 +178,117 @@
     }
     @media (max-width: toEm($mobile)) {
         margin-top: 0px;
+    }
+}
+
+// ========================== summer ==========================
+
+.summer {
+    @include adaptiveValue("margin-bottom", 37, 10);
+    // .summer__container
+
+    &__container {
+    }
+
+    // .summer__sectionheader
+
+    &__sectionheader {
+        @include adaptiveValue("margin-bottom", 49, 20);
+
+        // max-width: 50%;
+    }
+
+    // .summer__content
+
+    &__content {
+        display: flex;
+        @include adaptiveValue("column-gap", 89, 20);
+        margin-bottom: 20px;
+        align-items: start;
+        justify-content: center;
+        @media (max-width: toEm($mobile)) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+        }
+    }
+
+    // .summer__item
+
+    &__item {
+    }
+
+    // .summer__action
+
+    &__action {
+        text-align: right;
+        padding-right: 20px;
+        @media (max-width: toEm($mobile)) {
+            padding: 0;
+        }
+    }
+}
+
+.item-summer {
+    // .item-summer__image
+
+    &__image {
+        max-width: 410px;
+        margin-inline: auto;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 42, 10);
+        }
+        &--after {
+            position: relative;
+            &::after {
+                content: "";
+                // display: block;
+                width: 224px;
+                height: 284px;
+                position: absolute;
+                border-radius: 36px;
+                bottom: -50px;
+                left: -18px;
+                // top: 263px;
+                // left: -112px;
+                background: url("@img/summer/03.jpg") 0px 0px / cover no-repeat;
+                z-index: 5;
+                @media (max-width: toEm($tablet)) {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: toEm($mobile)) {
+            max-width: 350px;
+        }
+        img {
+            max-width: 100%;
+            aspect-ratio: 410 /521;
+            object-fit: cover;
+            border-radius: 36px;
+        }
+    }
+
+    // .item-summer__text
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.38; /* 25/18 */
+        &:not(:last-child) {
+            margin-bottom: 36px;
+        }
+        @media (max-width: toEm($mobile)) {
+            text-align: center;
+            max-width: 90%;
+            margin-inline: auto;
+        }
+        @media (max-width: toEm(400)) {
+            max-width: 100%;
+        }
+    }
+
+    // .item-summer__image--after
+
+    &__image--after {
     }
 }
