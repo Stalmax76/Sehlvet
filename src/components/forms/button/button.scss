@@ -48,6 +48,9 @@
 				color: var(--white-color);
 			}
 		}
+		@media (max-width: toEm($mobile)){
+			margin-inline: 0;
+		}
 	}
 	&--arrow-right {
 		rotate: 180deg;

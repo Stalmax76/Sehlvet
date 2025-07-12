@@ -7,7 +7,7 @@
       .sectionheader__subtitle {
          text-align: right;
       }
-      @media(max-width: toEm(650)) {
+      @media(max-width: toEm($mobile)) {
          .sectionheader__subtitle{
             text-align: center;
          }
