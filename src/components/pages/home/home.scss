@@ -1,7 +1,6 @@
 .pages {
 }
-.page--home {
-}
+
 
 .home {
     &__hero {
@@ -11,6 +10,10 @@
     }
     &__summer {
     }
+    &__winter {
+    }
+    &__reviews {
+		}
 }
 .hero {
     // position: relative;
@@ -184,7 +187,7 @@
 // ========================== summer ==========================
 
 .summer {
-    @include adaptiveValue("margin-bottom", 37, 10);
+    @include adaptiveValue("margin-bottom", 131, 40);
     // .summer__container
 
     &__container {
@@ -233,27 +236,27 @@
     // .item-summer__image
 
     &__image {
-        max-width: 410px;
+        max-width: 70%;
         margin-inline: auto;
         &:not(:last-child) {
             @include adaptiveValue("margin-bottom", 42, 10);
         }
+
         &--after {
             position: relative;
             &::after {
                 content: "";
                 // display: block;
-                width: 224px;
-                height: 284px;
+                width: 48%;
+                aspect-ratio: 224 / 284;
                 position: absolute;
                 border-radius: 36px;
-                bottom: -50px;
-                left: -18px;
-                // top: 263px;
-                // left: -112px;
+                bottom: -10%;
+                left: -26%;
                 background: url("@img/summer/03.jpg") 0px 0px / cover no-repeat;
                 z-index: 5;
-                @media (max-width: toEm($tablet)) {
+                
+                @media (max-width: toEm($mobile)) {
                     display: none;
                 }
             }
@@ -266,6 +269,13 @@
             aspect-ratio: 410 /521;
             object-fit: cover;
             border-radius: 36px;
+            @media (any-hover: hover) {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                &:hover {
+                    transform: scale(1.01);
+                    box-shadow: 1px 4px 24px rgba(0, 0, 0, 0.25);
+                }
+            }
         }
     }
 
@@ -292,3 +302,209 @@
     &__image--after {
     }
 }
+
+// ========================== winter ==========================
+
+.winter {
+    @include adaptiveValue("margin-bottom", 131, 40);
+    // .winter__container
+
+    &__container {
+    }
+
+    // .winter__sectionheader
+
+    &__sectionheader {
+        @include adaptiveValue("margin-bottom", 57, 30);
+    }
+
+    // .winter__content
+
+    &__content {
+        display: flex;
+        @include adaptiveValue("column-gap", 55, 20);
+        align-items: center;
+        justify-content: center;
+        
+        @media (max-width: toEm(650)) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            
+        }
+    }
+
+    // .winter__item
+
+    &__item {
+        flex-basis: 50%;
+        flex-shrink: 1;
+        @media (max-width: toEm(650)) {
+            width: 100%;
+        }
+    }
+
+    // .winter__action
+
+    &__action {
+        text-align: right;
+        padding-right: 20px;
+        @media (max-width: toEm($mobile)) {
+            padding: 0;
+        }
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 56, 20);
+        }
+    }
+}
+
+.item-winter {
+    // .item-winter__text
+
+    &__text {
+        line-height: 1.38;
+        color: $mainColor;
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+        @media (max-width: toEm($mobile)) {
+            text-align: center;
+            max-width: 90%;
+            margin-inline: auto;
+        }
+        @media (max-width: toEm(400)) {
+            max-width: 100%;
+        }
+    }
+
+    // .item-winter__image
+
+    &__image-wrapper {
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        
+        @media (max-width: toEm(650)) {
+            justify-content: center;
+            
+            
+        }
+       
+       
+        .main-image{
+            position: relative;
+            aspect-ratio:319 / 405 ;
+            max-width: 319px;
+            @media (max-width: toEm(650)){
+               max-width: 98%; 
+            }
+
+        }
+        .additional-image{
+            position: absolute;
+            aspect-ratio: 428 / 284;
+            max-width: 73%;
+            inset-block-end: 0;
+            inset-inline-start: 0;
+            z-index: 5;
+            @media(max-width: toEm($mobile)){
+                display: none;
+            }
+            
+        }
+         img {
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 36px;
+            height: auto;
+            @media (any-hover: hover) {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                &:hover {
+                    transform: scale(1.01);
+                    box-shadow: 1px 4px 24px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        
+         
+    }
+}
+
+// ========================== reviews ==========================
+
+.reviews {
+
+		// .reviews__container
+
+		&__container {
+		}
+
+		// .reviews__sectionheader
+
+		&__sectionheader {
+		}
+
+		// .reviews__content
+
+		&__content {
+		}
+
+		// .reviews__items
+
+		&__items {
+		}
+
+		// .reviews__item
+
+		&__item {
+		}
+
+		// .reviews__actions
+
+		&__actions {
+		}
+
+		// .reviews__btn
+
+		&__btn {
+		}
+}
+
+
+.item-reviews {
+
+		// .item-reviews__image
+
+		&__image {
+		}
+
+		// .item-reviews__body
+
+		&__body {
+		}
+
+		// .item-reviews__text
+
+		&__text {
+		}
+
+		// .item-reviews__info
+
+		&__info {
+		}
+}
+
+.info-item-reviews {
+
+		// .info-item-review__author
+
+		&__author {
+		}
+
+		// .info-item-review__position
+
+		&__position {
+		}
+}
+
