@@ -460,14 +460,14 @@
 		// .reviews__content
 
 		&__content {
-            min-height: 430px;
+            // min-height: 430px;
         		}		// .reviews__items
 
 		&__items {
             max-width: 100%;
             display: flex;
             @include adaptiveValue("column-gap", 151, 10);
-            align-items: center;
+            align-items: flex-end;
             @media (max-width: toEm(1200)) {
                 @include adaptiveValue("row-gap", 30, 10);
                 flex-direction: column;
@@ -485,11 +485,16 @@
 		// .reviews__actions
 
 		&__actions {
-            display: flex;
+            display: inline-flex;
             @include adaptiveValue("column-gap", 28, 10);
             margin-right: 20px;
+            // padding-bottom: 80px;
             @media (max-width: toEm(1200)) {
                 margin-right: 0;
+            }
+            @media (max-width: toEm($mobile)) {
+                margin-inline: auto;
+                
             }
             // align-self: flex-end;
 		}
@@ -503,9 +508,9 @@
 
 
 .item-reviews {
-    min-height: 430px;
+    // min-height: 430px;
     display: flex;
-    // position: relative;
+        // position: relative;
     @include adaptiveValue("column-gap", 40, 20);
     @media (max-width: toEm(650)) {
         flex-direction: column;
@@ -551,9 +556,10 @@
 		// .item-reviews__body
 
 		&__body {
-            flex: 1 1 auto;
-            align-self: center;
+            flex: 1 1 2px;
+            align-self: flex-end;
             padding-inline: 15px;
+            padding-bottom: 20px;
             
             // display: flex;
             // flex-direction: column;
@@ -577,7 +583,7 @@
                 content: '\f107';
                 position: absolute;
                 font-family: "iconfont";
-                inset-block-start: -90px;
+                inset-block-start: -150px;
                 inset-inline-start: 0;
                 @include adaptiveValue("font-size", 48, 24);
                 width: 100%;
@@ -589,7 +595,7 @@
                 content: '\f107';
                 position: absolute;
                 font-family: "iconfont";
-                inset-block-start: -90px;
+                inset-block-start: -150px;
                 inset-inline-start: 27px;
                @include adaptiveValue("font-size", 48, 24);
                 width: 100%;
@@ -626,6 +632,9 @@
             text-transform: capitalize;
             margin-bottom: 15px;
             @include adaptiveValue("font-size", 24, 20);
+            @media (max-width: toEm(650)) {
+                margin-bottom: 10px;
+            }
 
 		}
 
