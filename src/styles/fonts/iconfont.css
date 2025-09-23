@@ -1,7 +1,7 @@
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("E://MyProjects/Sehlvet/Sehlvet/Sehlvet/src/assets/svgicons/preview/iconfont.woff2?b8e481c4cc1430edbe7449f21b5a9a19") format("woff2"); 
+	src: url("E://MyProjects/for JavaScript and Animation/Sehlvet/Sehlvet/Sehlvet/src/assets/svgicons/preview/iconfont.woff2?3fcc21b036eaf94df6e14dc114479ee0") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
