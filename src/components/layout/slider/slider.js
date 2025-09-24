@@ -29,7 +29,7 @@ function initSliders() {
   if (document.querySelector('.reviews__swiper')) {
     // <- Вказуємо склас потрібного слайдера
     // Створюємо слайдер
-    new Swiper('.swiper', {
+    new Swiper('.reviews__swiper', {
       // <- Вказуємо склас потрібного слайдера
       // Підключаємо модулі слайдера
       // для конкретного випадку
@@ -40,6 +40,7 @@ function initSliders() {
       spaceBetween: 0,
       autoHeight: true,
       speed: 800,
+      watchOverflow: true,
 
       //touchRatio: 0,
       //simulateTouch: false,

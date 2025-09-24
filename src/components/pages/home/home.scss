@@ -104,9 +104,13 @@
     &__sectionheader {
         margin-bottom: 10px;
     }
-
+   
+        
+        
+        
+  
     &__items {
-        display: flex;
+       display: flex;
         justify-content: space-between;
         align-items: baseline;
         position: relative;
@@ -126,7 +130,10 @@
     }
 
     &__item {
-        &:first-child {
+
+        aspect-ratio: 444 / 691;
+        &:nth-child(3n + 1) {
+            aspect-ratio: 340 / 513;
             position: relative;
             inset-inline-start: 0;
             inset-block-end: 28px;
@@ -134,16 +141,32 @@
                 inset-block-end: 0;
                 position: static;
             }
+              @media (max-width: toEm($tablet)){
+                aspect-ratio: 444 / 691;
+              }
         }
-        &:last-child {
+        &:nth-child(3n) {
+            aspect-ratio: 340 / 513;
             position: relative;
-            inset-inline-end: 0;
-            inset-block-start: -103px;
+            inset-inline-start: 0;
+            inset-block-start: -115px;
             @media (max-width: toEm(1150)) {
                 inset-block-start: 0;
                 position: static;
             }
+            @media (max-width: toEm($tablet)){
+                aspect-ratio: 444 / 691;
+              }
         }
+        // &:nth-child(3n + 3) {
+        //     position: relative;
+        //     inset-inline-end: 0;
+        //     inset-block-start: -103px;
+        //     @media (max-width: toEm(1150)) {
+        //         inset-block-start: 0;
+        //         position: static;
+        //     }
+        
 
         @media (max-width: toEm($tablet)) {
             &:nth-child(1) {
@@ -499,6 +522,7 @@
                display:none;
                 
             }
+           
             // align-self: flex-end;
 		}
 
@@ -525,7 +549,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @include adaptiveValue("row-gap", 40, 20);
+        @include adaptiveValue("row-gap", 40, 10);
     }
    
     
@@ -565,31 +589,20 @@
 		// .item-reviews__body
 
 		&__body {
+            position: relative;
             flex: 1 1 2px;
-            align-self: flex-end;
-            padding-inline: 15px;
-            padding-bottom: 20px;
-            
+            // align-self: flex-end;
+            padding: 46px 15px 20px;
+            @include adaptiveValue("padding-top",46 ,0 );
            
             
           
-		}
-
-		// .item-reviews__text
-
-		&__text {
-            position: relative;
-            font-size: 16px;
-            line-height: 1;
-            color: $mainColor;
-            @include adaptiveValue("margin-bottom", 80, 30);
-            
               &::before{
                 content: '\f107';
                 position: absolute;
                 font-family: "iconfont";
-                inset-block-start: -150px;
-                inset-inline-start: 0;
+                inset-block-start: 0;
+                inset-inline-start: 10px;
                 @include adaptiveValue("font-size", 48, 24);
                 width: 100%;
                 height: 100%;
@@ -600,8 +613,8 @@
                 content: '\f107';
                 position: absolute;
                 font-family: "iconfont";
-                inset-block-start: -150px;
-                inset-inline-start: 27px;
+                inset-block-start: 0px;
+                inset-inline-start: 37px;
                @include adaptiveValue("font-size", 48, 24);
                 width: 100%;
                 height: 100%;
@@ -614,6 +627,29 @@
                     display: none;
                 }
             }
+            
+           
+            
+          
+		}
+
+		// .item-reviews__text
+
+		&__text {
+        
+           @include adaptiveValue("padding-top",94 ,12 );
+            max-width: 572px;
+            font-size: 16px;
+            line-height: 1;
+            color: $mainColor;
+            @include adaptiveValue("margin-bottom", 80, 30);
+            p{
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+            
+            
             // align-self: center;
 		}
 
