@@ -72,6 +72,7 @@
     &__btn {
         // max-width: 222px;
     }
+    
 
     &__image {
         // flex-basis: 670px;
@@ -90,7 +91,54 @@
 
     &__image-img {
     }
+    &__backdrop {
+		}
 }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    &.active{
+    opacity: 1;
+    pointer-events: auto;
+    & .modal{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+}
+.modal {
+    background-color: #fff;
+    padding:20px;
+    border-radius: 8px;
+    min-width: 300px;
+    position: relative;
+     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+     transform: translateY(-20px);
+     opacity: 0;
+     transition: all 0.3s ease;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
 
 // ------------------------------------  trending ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
