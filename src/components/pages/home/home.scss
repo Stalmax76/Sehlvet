@@ -206,14 +206,7 @@
                 aspect-ratio: 444 / 691;
               }
         }
-        // &:nth-child(3n + 3) {
-        //     position: relative;
-        //     inset-inline-end: 0;
-        //     inset-block-start: -103px;
-        //     @media (max-width: toEm(1150)) {
-        //         inset-block-start: 0;
-        //         position: static;
-        //     }
+      
         
 
         @media (max-width: toEm($tablet)) {
