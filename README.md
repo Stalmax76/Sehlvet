@@ -1,46 +1,98 @@
-//================= English documentation =================
+# 🧥 Sehlvet — Fashion Landing Page
 
-🧩 Core technologies
-HTML5 The page structure is built using modern semantic HTML5, using the <header>, <main>, <section>, <footer> elements for logical content organization.
+A responsive landing page for the clothing brand **Sehlvet**, created with a focus on aesthetics, speed, and usability. Suitable for showcasing seasonal collections, brands, and customer reviews.
 
-CSS (SCSS/Minified) Styling is implemented via an external index.min.css file, likely generated from SCSS. Modular classes, BEM methodology (block\_\_element--modifier) ​​and adaptive styles are used.
+## 🚀 Technologies
 
-JavaScript (ES Modules) The index.min.js script is connected as an ES module. It is responsible for interactivity: opening a modal window, working with burger menus, sliders, buttons, etc.
+- **HTML5** — semantic markup with logical structure
+- **SCSS / CSS Modules** — styling with BEM methodology and adaptive media queries
+- **JavaScript (ES Modules)** — interaction logic, modal windows, burger menu
+- **Swiper.js** — implementation of sliders for reviews and cards
+- **WebP + `<picture>`** — optimized images for fast loading
+- **Custom Fonts** — preload fonts to improve performance
 
-Swiper.js The Swiper library is used to implement sliders (for example, the reviews section), as can be seen from the swiper-slide, swiper-wrapper, swiper-button-prev/next classes.
+## 📦 Project structure
 
-WebP and Picture Element Images are optimized in .webp format, and <picture> is used for adaptive loading depending on the screen width.
+├── index.html
+── css/
+│ └── index.min.css
+├── js/
+│ └── index.min.js
+├── assets/
+│ ├── fonts/
+│ ├── img/
+│ └── ...
 
-Custom Font Preloading The wilkysta.woff2 font is preloaded, which improves performance.
+## 📱 Responsiveness
 
-ARIA and Accessibility Partially implemented accessibility via aria-label for social icons.
+- Support for mobile, tablet and desktop
+- `<picture>` for responsive images
+- Flexbox / Grid for flexible layout
 
-🛠️ Additional features
-Modular component structure Components have their own classes with prefixes (cardtrending**, sectionheader**, item-reviews\_\_), which indicates a component approach.
+## 🧩 Components
 
-Responsive design Use of media queries (<source media="(max-width: 600px)">) and classes for mobile image variants.
+- **Hero Section** — title, description, CTA button, modal window
+- **Trending Collections** — product cards with prices and actions
+- **Seasonal Blocks** — summer and winter collections
+- **Reviews Slider** — customer reviews
+- **Footer** — navigation, contacts, social networks
 
-Interactive elements Buttons with classes btn--icon-arrow-exp, open-modal-btn, icon-menu — interactive, probably with animations or JS events.
+## 🛠️ Launch
 
-// ================= Українська документація =================
-🧩 Основні технології
-HTML5 Структура сторінки побудована за допомогою сучасного семантичного HTML5, з використанням елементів <header>, <main>, <section>, <footer> для логічної організації контенту.
+1. Clone the repository:
 
-CSS (SCSS/Minified) Стилізація реалізована через зовнішній файл index.min.css, ймовірно згенерований із SCSS. Використовуються модульні класи, BEM-методологія (block\_\_element--modifier) та адаптивні стилі.
+````bash
+git clone https://github.com/your-username/sehlvet-landing.git
 
-JavaScript (ES Modules) Підключено скрипт index.min.js як ES-модуль. Він відповідає за інтерактивність: відкриття модального вікна, роботу бургер-меню, слайдерів, кнопок тощо.
 
-Swiper.js Для реалізації слайдерів (наприклад, секція відгуків) використовується бібліотека Swiper, що видно з класів swiper-slide, swiper-wrapper, swiper-button-prev/next.
 
-WebP та Picture Element Зображення оптимізовані у форматі .webp, а <picture> використовується для адаптивного завантаження залежно від ширини екрану.
 
-Custom Font Preloading Шрифт wilkysta.woff2 підвантажується через preload, що покращує продуктивність.
+// ================= Українська версія =================
 
-ARIA та Accessibility Частково реалізована доступність через aria-label для соціальних іконок.
 
-🛠️ Додаткові особливості
-Модульна структура компонентів Компоненти мають власні класи з префіксами (cardtrending**, sectionheader**, item-reviews\_\_), що свідчить про компонентний підхід.
 
-Адаптивний дизайн Використання медіа-запитів (<source media="(max-width: 600px)">) та класів для мобільних варіантів зображень.
+Адаптивний лендінг для бренду одягу **Sehlvet**, створений з фокусом на естетику, швидкість та зручність користування. Підходить для демонстрації сезонних колекцій, брендів та відгуків клієнтів.
 
-Інтерактивні елементи Кнопки з класами btn--icon-arrow-exp, open-modal-btn, icon-menu — інтерактивні, ймовірно з анімаціями або подіями JS.
+## 🚀 Технології
+
+- **HTML5** — семантична розмітка з логічною структурою
+- **SCSS / CSS Modules** — стилізація з BEM-методологією та адаптивними медіа-запитами
+- **JavaScript (ES Modules)** — логіка взаємодії, модальні вікна, бургер-меню
+- **Swiper.js** — реалізація слайдерів для відгуків та карток
+- **WebP + `<picture>`** — оптимізовані зображення для швидкого завантаження
+- **Custom Fonts** — preload шрифтів для покращення продуктивності
+
+## 📦 Структура проєкту
+
+├── index.html
+── css/
+│ └── index.min.css
+├── js/
+│ └── index.min.js
+├── assets/
+│ ├── fonts/
+│ ├── img/
+│ └── ...
+
+
+## 📱 Адаптивність
+
+- Підтримка мобільних, планшетів і десктопів
+- `<picture>` для адаптивних зображень
+- Flexbox / Grid для гнучкого макету
+
+## 🧩 Компоненти
+
+- **Hero Section** — заголовок, опис, CTA-кнопка, модальне вікно
+- **Trending Collections** — картки товарів з цінами та діями
+- **Seasonal Blocks** — літні та зимові колекції
+- **Reviews Slider** — відгуки клієнтів
+- **Footer** — навігація, контакти, соцмережі
+
+## 🛠️ Запуск
+
+1. Клонуйте репозиторій:
+   ```bash
+   git clone https://github.com/your-username/sehlvet-landing.git
+
+````
