@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/wilkysta.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1760770428282"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1760770428282">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<span>Sehlvet</span>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#home" class="menu__link menu__link--active">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#collection" class="menu__link">Collections</a>
+								</li>
+								<li class="menu__item">
+									<a href="#brands" class="menu__link">Brands</a>
+								</li>
+								<li class="menu__item">
+									<a href="#about" class="menu__link">About Us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1760770428282on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					<div class="header__actions actions">
+						<a href="#" class="actions__item actions__item--icon-bookmark"></a>
+						<a href="#" class="actions__item actions__item--icon-bag"></a>
+						<button type="button" data-fls-menu="" class="actions__item icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main class="pages page--home">
+				<section id="home" class="home__hero hero">
+					<div class="hero__container">
+						<div class="hero__content">
+							<h1 class="hero__title">
+								<span>Elevate Style,</span>
+								<span>Embrace Story</span>
+							</h1>
+							<div class="hero__text">
+								<p>
+									We provide the largest clothing collection for any season. You can choose trendy or classy design
+						according to your
+						preferences. Our services are super fast and we update within 24 hours.
+								</p>
+							</div>
+							<a data-fls-button="" href="#" class="hero__btn btn btn--brown btn--icon-arrow-exp open-modal-btn">Explore</a>
+							<div class="hero__backdrop backdrop" id="backdrop">
+								<div class="modal">
+									<button class="close-btn" id="closeBtn">✖</button>
+									<h2>Hello!</h2>
+									<p>You opened site's modal page!😉</p>
+								</div>
+							</div>
+						</div>
+						<div class="hero__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/woman-600.webp" type="image/webp">
+								<img alt="woman" class="hero__image-img" src="./assets/img/woman.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section id="collection" class="home__trending trending">
+					<div class="trending__container">
+						<div class="trending__sectionheader sectionheader" data-fls-sectionheader="">
+							<div class="sectionheader__container">
+								<div class="sectionheader__title">
+									<h2 class="sectionheader__title-text">
+										Trending
+										<span>Collections</span>
+									</h2>
+								</div>
+								<div class="sectionheader__subtitle">
+									<p class="sectionheader__subtitle-text">Have a look on what’s trending now!</p>
+								</div>
+							</div>
+						</div>
+						<div class="trending__items">
+							<article class="trending__item cardtrending cardtrending--small block__slide swiper-slide" data-fls-cardtrending="">
+								<div class="cardtrending__body">
+									<div class="cardtrending__image">
+										<picture>
+											<img alt="trrending image" src="./assets/img/trending/01.webp">
+										</picture>
+									</div>
+									<h3 class="cardtrending__title">Formal Shirt For Woman</h3>
+									<div class="cardtrending__footer footer-cardtrending">
+										<div class="footer-cardtrending__info info-cardtrending">
+											<div class="info-cardtrending__price">
+												Price:
+												<span class="actual-price">$25.38</span>
+											</div>
+										</div>
+										<div class="footer-cardtrending__action action-cardtrending">
+											<a href="#" class="action-cardtrending__item action-cardtrending__item--icon-mark-cart action-cardtrending__item--icon-mark-cart--active"></a>
+											<a href="#" class="action-cardtrending__item action-cardtrending__item--icon-bag-card"></a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="cardtrending" data-fls-cardtrending="">
+								<div class="cardtrending__body">
+									<div class="cardtrending__image">
+										<picture>
+											<img alt="trrending image" src="./assets/img/trending/02.webp">
+										</picture>
+									</div>
+									<h3 class="cardtrending__title">Black and gray Exercise outfit</h3>
+									<div class="cardtrending__footer footer-cardtrending">
+										<div class="footer-cardtrending__info info-cardtrending">
+											<div class="info-cardtrending__price">
+												Price:
+												<span class="actual-price">$08.50</span>
+												<span class="previous-price">$12.28</span>
+											</div>
+										</div>
+										<div class="footer-cardtrending__action action-cardtrending">
+											<a href="#" class="action-cardtrending__item action-cardtrending__item--icon-mark-cart"></a>
+											<a href="#" class="action-cardtrending__item action-cardtrending__item--icon-bag-card"></a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="trending__item cardtrending cardtrending--small" data-fls-cardtrending="">
+								<div class="cardtrending__body">
+									<div class="cardtrending__image">
+										<picture>
+											<img alt="trrending image" src="./assets/img/trending/03.webp">
+										</picture>
+									</div>
+									<h3 class="cardtrending__title">Yellow Jacket For Winter</h3>
+									<div class="cardtrending__footer footer-cardtrending">
+										<div class="footer-cardtrending__info info-cardtrending">
+											<div class="info-cardtrending__price">
+												Price:
+												<span class="actual-price">$14.55</span>
+											</div>
+										</div>
+										<div class="footer-cardtrending__action action-cardtrending">
+											<a href="#" class="action-cardtrending__item action-cardtrending__item--icon-mark-cart"></a>
+											<a href="#" class="action-cardtrending__item action-cardtrending__item--icon-bag-card"></a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="trending__action">
+							<a data-fls-button="" href="#" class="btn btn--icon-arrow-exp">View All</a>
+						</div>
+					</div>
+				</section>
+				<section id="brands" class="home__summer summer">
+					<div class="summer__container">
+						<div class="summer__sectionheader sectionheader" data-fls-sectionheader="">
+							<div class="sectionheader__container">
+								<div class="sectionheader__title">
+									<h2 class="sectionheader__title-text">
+										Summer
+										<span>Collections</span>
+									</h2>
+								</div>
+								<div class="sectionheader__subtitle">
+									<p class="sectionheader__subtitle-text">We consider your look and comfort on scorching weather.</p>
+								</div>
+							</div>
+						</div>
+						<div class="summer__content">
+							<div class="summer__item item-summer">
+								<div class="item-summer__image">
+									<picture>
+										<img alt="Image summer collection" src="./assets/img/summer/01.webp">
+									</picture>
+								</div>
+								<div class="item-summer__text">
+									<p>
+										Our main aim is to serve our customer with better quality product. We try to understand their
+							needs and provide them
+							within a short period of time.
+									</p>
+								</div>
+							</div>
+							<div class="summer__item item-summer">
+								<div class="item-summer__text">
+									<p>
+										We provide the largest clothing collection for any season. You can choose trendy or classy
+							design according to your
+							preferences. Our services are super fast and we update within 24 hours.
+									</p>
+								</div>
+								<div class="item-summer__image item-summer__image--after">
+									<picture>
+										<img alt="Image summer collection" src="./assets/img/summer/02.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="summer__action">
+							<a data-fls-button="" href="#" class="btn btn--icon-arrow-exp">Explore</a>
+						</div>
+					</div>
+				</section>
+				<section class="home__winter winter">
+					<div class="winter__container">
+						<div class="winter__sectionheader sectionheader sectionheader--right" data-fls-sectionheader="">
+							<div class="sectionheader__container">
+								<div class="sectionheader__title">
+									<h2 class="sectionheader__title-text">
+										Winter
+										<span>Collections</span>
+									</h2>
+								</div>
+								<div class="sectionheader__subtitle">
+									<p class="sectionheader__subtitle-text">We consider your look and comfort on cold weather.</p>
+								</div>
+							</div>
+						</div>
+						<div class="winter__content">
+							<div class="winter__item item-winter">
+								<div class="item-winter__text">
+									<p>
+										We provide the largest clothing collection for any season. You can choose trendy or classy
+							design according to your
+							preferences. Our services are super fast and we update within 24 hours.
+									</p>
+								</div>
+								<div class="item-winter__image-wrapper">
+									<picture>
+										<img alt="Image of winter collection" class="main-image" src="./assets/img/winter/02.webp">
+									</picture>
+									<picture>
+										<img alt="Image of winter collection" class="additional-image" src="./assets/img/winter/01.webp">
+									</picture>
+								</div>
+							</div>
+							<div class="winter__item item-winter">
+								<div class="winter__action">
+									<a data-fls-button="" href="#" class="btn btn--icon-arrow-exp">Explore</a>
+								</div>
+								<div class="item-winter__text">
+									<p>
+										Our main aim is to serve our customer with better quality product. We try to understand their
+							needs and provide them
+							within a short period of time. We provide the largest clothing collection for any season.
+							You can choose trendy or
+							classy design according to your preferences. Our services are super fast and we update
+							within 24 hours.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="about" class="home__reviews reviews">
+					<div class="reviews__container">
+						<div class="reviews__sectionheader sectionheader sectionheader--right" data-fls-sectionheader="">
+							<div class="sectionheader__container">
+								<div class="sectionheader__title">
+									<h2 class="sectionheader__title-text">
+										<span>What our</span>
+										Customer says
+									</h2>
+								</div>
+								<div class="sectionheader__subtitle">
+									<p class="sectionheader__subtitle-text">We value our customer’s feedback to provide the best
+							service.</p>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__content reviews__swiper block swiper" data-fls-slider="">
+							<div class="reviews__items block__wrapper swiper-wrapper">
+								<div class="reviews__item item-reviews block__slide swiper-slide">
+									<div class="item-reviews__image">
+										<picture>
+											<img alt="Photo of author" src="./assets/img/winter/03.webp">
+										</picture>
+									</div>
+									<div class="item-reviews__body">
+										<div class="item-reviews__text">
+											<p>
+												Ladiesvibe provided me the exact quality product I wanted. I’m very much satisfied by
+									their quick delivery process. They
+									delivered my dress within a day
+											</p>
+										</div>
+										<div class="item-reviews__info info-item-reviews">
+											<p class="info-item-reviews__author">Jane Bennet</p>
+											<p class="info-item-reviews__position">Fashion Model</p>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__item item-reviews block__slide swiper-slide">
+									<div class="item-reviews__image">
+										<picture>
+											<img alt="Photo of author" src="./assets/img/winter/03.webp">
+										</picture>
+									</div>
+									<div class="item-reviews__body">
+										<div class="item-reviews__text">
+											<p>
+												Ladiesvibe provided me the exact quality product I wanted. I’m very much satisfied by
+									their quick delivery process. They
+									delivered my dress within a day
+											</p>
+											<p>
+												Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam hic iste
+									voluptatibus repellendus accusantium, et quidem.
+											</p>
+										</div>
+										<div class="item-reviews__info info-item-reviews">
+											<p class="info-item-reviews__author">Jane Bennet</p>
+											<p class="info-item-reviews__position">Fashion Model</p>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__item item-reviews block__slide swiper-slide">
+									<div class="item-reviews__image">
+										<picture>
+											<img alt="Photo of author" src="./assets/img/trending/02.webp">
+										</picture>
+									</div>
+									<div class="item-reviews__body">
+										<div class="item-reviews__text">
+											<p>
+												Ladiesvibe provided me the exact quality product I wanted. I’m very much satisfied by
+									their quick delivery process. They
+									delivered my dress within a day
+											</p>
+										</div>
+										<div class="item-reviews__info info-item-reviews">
+											<p class="info-item-reviews__author">Olena Rians</p>
+											<p class="info-item-reviews__position">Administrator</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__actions swiper__buttons">
+								<button data-fls-button="" type="button" class="reviews__btn btn btn--arrow-left btn--icon-strok swiper-button-prev"></button>
+								<button data-fls-button="" type="button" class="reviews__btn btn btn--arrow-right btn--icon-strok swiper-button-next"></button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__item item-footer-presentation">
+						<a href="#" class="item-footer-presentation__logo">Sehlvet</a>
+						<div class="item-footer-presentation__text">2025 Sehlvet . All Rights Reserved</div>
+						<div class="item-footer-presentation__social social">
+							<ul class="social__list-icons">
+								<li class="social__list-icon">
+									<a href="#" aria-label="Facebook" class="social__list-icon-link social__list-icon-link--icon-s-facebook"></a>
+								</li>
+								<li class="social__list-icon">
+									<a href="#" aria-label="LinkedIn" class="social__list-icon-link social__list-icon-link--icon-s-linkdin"></a>
+								</li>
+								<li class="social__list-icon">
+									<a href="#" aria-label="Twiter" class="social__list-icon-link social__list-icon-link--icon-s-twiter"></a>
+								</li>
+								<li class="social__list-icon">
+									<a href="#" aria-label="Instagram" class="social__list-icon-link social__list-icon-link--icon-s-instagram"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="footer__item footer__sections-list section-list">
+						<li class="section-list__item">
+							<a href="#home">Home</a>
+						</li>
+						<li class="section-list__item">
+							<a href="#collection">Collections</a>
+						</li>
+						<li class="section-list__item">
+							<a href="#brands">Brands</a>
+						</li>
+						<li class="section-list__item">
+							<a href="#about">About Us</a>
+						</li>
+					</ul>
+					<div class="footer__item footer-contacts">
+						<h4 class="footer-contacts__title">Contact Us</h4>
+						<a href="tel:525252244" class="footer-contacts__phone">525-252-4244</a>
+						<a href="mailto:sehlvet@gmail.com" class="footer-contacts__email">sehlvet@gmail.com</a>
+						<a href="#" class="footer-contacts__host">www.selvet.com</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
