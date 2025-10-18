@@ -1,5 +1,7 @@
 # 🧥 Sehlvet — Fashion Landing Page
 
+👉 [Live Demo](https://stalmax76.github.io/Sehlvet/)
+
 A responsive landing page for the clothing brand **Sehlvet**, created with a focus on aesthetics, speed, and usability. Suitable for showcasing seasonal collections, brands, and customer reviews.
 
 ## 🚀 Technologies
